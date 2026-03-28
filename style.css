@@ -40,7 +40,12 @@ li{
   --font-color: #424242;
   --bg-color: #ffffff;
   --heading-color:#000a19;
-  --para-color:#504e4d
+  --para-color:#504e4d;
+  --h-color:#0a043c;
+  --white-color:#ffffff;
+  --test:#070101;
+  --bnt-hover-bg-color:#003b99;
+  --btn-box-shadow:rgba(100,100,111,0.2) 0px 7px 29px 0px;
 }
 /* Theme End */
 
@@ -50,7 +55,34 @@ li{
   margin: 0 auto;
   padding: 9.6rem 2.4rem;
 }
+
+.grid{
+  display: grid;
+}
+
+.grid-two--cols{
+  grid-template-columns: repeat(2,1fr);
+}
 /* Layout End */
+
+
+/* Module Reuse Start */
+
+.btn{
+  display: inline-block;
+  padding: 1.2rem 3.2rem;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-radius:0.6rem;
+}
+
+.btn:hover{
+  background-color:var(--bnt-hover-bg-color);
+  cursor:pointer;
+  box-shadow:var(--btn-box-shadow);
+}
+
+/* Medule Reuse End*/
 
 /* Navbar Section Start */
 .section-navbar{
@@ -104,6 +136,8 @@ li{
 
 
 /* Start Banner section */
-
+.main{
+  
+}
 
 /* End Banner Section */
