@@ -22,6 +22,7 @@ p, li, a{
   letter-spacing: 0.1rem;
   font-weight: 400;
   color: var(--para-color);
+  line-height:1.5;
 }
 
 a{
@@ -41,7 +42,7 @@ li{
   --bg-color: #ffffff;
   --heading-color:#000a19;
   --para-color:#504e4d;
-  --h-color:#0a043c;
+  --hero-heading-color:#003b99;
   --white-color:#ffffff;
   --test:#070101;
   --bnt-hover-bg-color:#003b99;
@@ -67,6 +68,12 @@ li{
 
 
 /* Module Reuse Start */
+
+.section-common-heading{
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
 
 .btn{
   display: inline-block;
@@ -95,7 +102,7 @@ li{
   display: flex;
   justify-content: space-between;
   align-items:center;
-  padding: 1.8rem 0;
+  padding: 1rem 0;
 }
 
 .section-navbar .navbar ul {
@@ -136,8 +143,81 @@ li{
 
 
 /* Start Banner section */
-.main{
-  
+main{
+  position: relative;
+  background-image: linear-gradient(
+    to top right,
+    #3d86fa,
+    #4484fb,
+    #679eff,
+    #b3d2ff,
+    #ebf3fe
+  );
 }
 
+.section-hero .grid{
+  align-items: center;
+  gap: 6.4rem;
+
+  & .hero-subheading{
+    text-transform: uppercase;
+    letter-spacing:0.2rem;
+    font-size: 1.7rem;
+    word-spacing: 0.2rem;
+    color: var(--bnt-hover-bg-color);
+    font-weight:700;
+  }
+
+  & .hero-heading{
+    font-size: 5.8rem;
+    line-height: 1.5;
+    font-family: "Jost";
+    color: var(--hero-heading-color);
+    font-weight: 900;
+
+  }
+
+  & .hero-para{
+    color: var(--white-color);
+    margin: 2rem 0 4.2rem 0;
+  }
+}
+
+
+.section-hero--image img{
+  width: 100%;
+  height: auto;
+}
+
+/* Shape Divider Start */
+
+.custom-shape-divider-bottom-1774880822 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1774880822 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1774880822 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Shape Divider End */
+
 /* End Banner Section */
+
+
+/* About Section Start */
+
+
+/* About Section End */
